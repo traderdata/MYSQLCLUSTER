@@ -9,8 +9,11 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
- *= require_tree .
- *= require ../../../lib/assets/css/skins/default.css
- *= require ../../../lib/assets/css/custom.css
+ *= require bootstrap/bootstrap
+ *= require fontawesome/font-awesome
+ *= require porto/theme
+ *= require porto/theme-elements
+ *= require rs-plugin/css/settings
+ *= require circle-flip-slideshow/component
+ *= require porto/skins/default.css
  */

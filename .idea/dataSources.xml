@@ -17,7 +17,7 @@
     <data-source source="LOCAL" name="Rails MysqlCluster: development" uuid="3c06f81d-6b60-4a01-8cd9-d74cf86a17c6">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Backup\GITHUB\EASYDB\db\development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Backup\GITHUB\MYSQLCLUSTER\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails MysqlCluster: test" uuid="96b2684d-a663-45fe-89c4-414f593af93e">
