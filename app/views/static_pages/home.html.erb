@@ -1,0 +1,281 @@
+<div role="main" class="main">
+<div class="slider-container">
+  <div class="slider" id="revolutionSlider" data-plugin-revolution-slider data-plugin-options='{"startheight": 600}'>
+    <ul>
+      <li data-transition="fade" data-slotamount="13" data-masterspeed="300" >
+
+        <img src="http://cdn.mysqlcluster.org/header-bg.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+        <div id = "header" style="position:absolute;top:0;">
+          <div style="position:absolute;left:200px;color:White;font-size:40px;top:30px" >MysqlCluster</div>
+          <div class="container">
+            <br /><br />
+            <!--<ul class="social-icons">
+              <li class="facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook">Facebook</a></li>
+              <li class="twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter">Twitter</a></li>
+              <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin">Linkedin</a></li>
+            </ul>-->
+            <nav>
+              <ul class="nav-pills nav-main">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#pricing">Pricing</a>
+                </li>
+                <li>
+                  <%= link_to "Sign-In", accounts_signin_path %>
+                </li>
+                <li>
+                  <%= link_to "Sign-Up", accounts_signup_path %>
+                </li>
+                <li>
+                  <a href="mailto:support@mysqlcluster.org">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+
+        <div class="tp-caption sft stb visible-lg"
+             data-x="72"
+             data-y="230"
+             data-speed="300"
+             data-start="1000"
+             data-easing="easeOutExpo"><img src="http://cdn.mysqlcluster.org/slides/slide-title-border.png" alt=""></div>
+
+        <div class="tp-caption top-label lfl stl"
+             data-x="115"
+             data-y="230"
+             data-speed="300"
+             data-start="500"
+             data-easing="easeOutExpo">Need a Reliable Database</div>
+
+        <div class="tp-caption sft stb visible-lg"
+             data-x="400"
+             data-y="230"
+             data-speed="300"
+             data-start="1000"
+             data-easing="easeOutExpo"><img src="http://cdn.mysqlcluster.org/slides/slide-title-border.png" alt=""></div>
+
+        <div class="tp-caption main-label sft stb"
+             data-x="70"
+             data-y="260"
+             data-speed="300"
+             data-start="1500"
+             data-easing="easeOutExpo">CLUSTER AS A SERVICE?</div>
+
+        <div class="tp-caption bottom-label sft stb"
+             data-x="70"
+             data-y="330"
+             data-speed="500"
+             data-start="2000"
+             data-easing="easeOutExpo">Check out our options and features.</div>
+
+
+        <div class="tp-caption sfb"
+             data-x="805"
+             data-y="130"
+             data-speed="600"
+             data-start="3450"
+             data-easing="easeOutExpo"><img src="http://cdn.mysqlcluster.org/slides/slide-concept-2-5.png" alt=""></div>
+
+        <div class="tp-caption blackboard-text lfb "
+             data-x="835"
+             data-y="350"
+             data-speed="500"
+             data-start="3450"
+             data-easing="easeOutExpo" style="font-size: 37px;">Think</div>
+
+        <div class="tp-caption blackboard-text lfb "
+             data-x="860"
+             data-y="400"
+             data-speed="500"
+             data-start="3650"
+             data-easing="easeOutExpo" style="font-size: 47px;">Cluster</div>
+
+        <div class="tp-caption blackboard-text lfb "
+             data-x="885"
+             data-y="450"
+             data-speed="500"
+             data-start="3850"
+             data-easing="easeOutExpo" style="font-size: 32px;">As a service!</div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+<div class="home-intro">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          The fastest way to deploy a clustered Mysql database.
+          <span>Check out our options and features included.</span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="get-started">
+          <%=link_to "Start your Clustered Database for free now!", accounts_signup_path, class: "btn btn-lg btn-primary"%>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<sector id="features">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Our <strong>Features</strong></h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="feature-box">
+              <div class="feature-box-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="feature-box-info">
+                <h4 class="shorter">Customer Support</h4>
+                <p class="tall">Our team is available 24x7 to assure that your database is always on.</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">
+                <i class="fa fa-file"></i>
+              </div>
+              <div class="feature-box-info">
+                <h4 class="shorter">Backups</h4>
+                <p class="tall">Daily backups, made in different regions and different clouds.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-6">
+            <div class="feature-box">
+              <div class="feature-box-icon">
+                <i class="fa fa-film"></i>
+              </div>
+              <div class="feature-box-info">
+                <h4 class="shorter">SLA</h4>
+                <p class="tall">High-availability solution, which provides high system up-time, no data loss and scalability for future growth.</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">
+                <i class="fa fa-google-plus"></i>
+              </div>
+              <div class="feature-box-info">
+                <h4 class="shorter">Multi-Master Replicaion</h4>
+                <p class="tall">Our technology is based on true multi-master syncronous replication.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>some numbers...</h2>
+
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  <i class="fa fa-usd"></i>
+                  Active Databases
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse in">
+              <div class="panel-body">
+                1.322 databases deployed so far, and we are only begining
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</sector>
+
+<sector id="pricing">
+  <div class="container">
+    <hr class="tall" />
+    <h3 class="short"><strong>Pricing</strong></h3>
+    <div class="row">
+
+      <div class="pricing-table">
+        <div class="col-md-3 col-sm-6">
+          <div class="plan">
+            <h3>Free<span>$0</span></h3>
+            <a class="btn btn-lg btn-primary" href="#">Sign up</a>
+            <ul>
+              <li><b>10MB</b> Disk Space</li>
+              <li><b>5</b> Conections</li>
+              <li>Low I/O</li>
+              <li>3 nodes available to garantee High Availability</li>
+              <li>Ideal for development areas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 center">
+          <div class="plan">
+            <h3>Developer<span>$5</span></h3>
+            <a class="btn btn-lg btn-primary" href="#">Sign up</a>
+            <ul>
+              <li><b>5GB</b> Disk Space</li>
+              <li><b>15</b> Connections</li>
+              <li>Moderate I/O</li>
+              <li>Daily backups</li>
+              <li>3 nodes available to garantee High Availability</li>
+              <li>Ideal for small app operations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="plan most-popular">
+            <div class="plan-ribbon-wrapper"><div class="plan-ribbon">Popular</div></div>
+            <h3>Professional<span>$20</span></h3>
+            <a class="btn btn-lg btn-primary" href="#">Sign up</a>
+            <ul>
+              <li><b>10GB</b> Disk Space</li>
+              <li><b>50</b> Connections</li>
+              <li>High I/O</li>
+              <li>Daily backups</li>
+              <li>5 nodes available to garantee High Availability</li>
+              <li>Ideal for medium apps</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="plan">
+            <h3>Enterprise<span>$69</span></h3>
+            <a class="btn btn-lg btn-primary" href="#">Contact us</a>
+            <ul>
+              <li><b>50GB</b> Disk Space</li>
+              <li><b>100</b> Connections</li>
+              <li>High I/O</li>
+              <li>Daily backups</li>
+              <li>5 nodes available to garantee High Availability</li>
+              <li>Ideal for medium apps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</sector>
+
+
+
+</div>

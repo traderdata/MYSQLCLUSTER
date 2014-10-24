@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="row featured-boxes login">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+                  <div class="featured-box featured-box-secundary default info-content">
+                    <div class="box-content">
+                      <h4>I'm a Returning Customer</h4>
+                      <% if !flash[:error].nil? %>
+                          <div id="error_explanation">
+                            <div class="alert alert-danger">
+                              <li><%=flash[:error]%></li>
+                            </div>
+                          </div>
+                      <% end %>
+                      <%= form_for(@account, url: accounts_signin_path, method: :post) do |f| %>
+                        <div class="row">
+                          <div class="form-group">
+                            <div class="col-md-12">
+                              <%= t('account.email')%>
+                              <%= f.text_field :email, class:'form-control input-lg' %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group">
+                            <div class="col-md-12">
+                              <a class="pull-right" href="#">(Lost Password?)</a>
+                              <%= t('account.password')%>
+                              <%= f.password_field :password, class:'form-control input-lg' %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+														<span class="remember-box checkbox">
+															<label for="rememberme">
+                                                              <input type="checkbox" id="rememberme" name="rememberme">Remember Me
+                                                            </label>
+														</span>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="submit" value="Login" class="btn btn-primary pull-right push-bottom" data-loading-text="Loading...">
+                          </div>
+                        </div>
+                      <%end%>
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+
+  </div>
+</div>

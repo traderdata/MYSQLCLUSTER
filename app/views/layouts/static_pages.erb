@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <title>MysqlCluster</title>
+  <meta name="keywords" content="HTML5 Template" />
+  <meta name="description" content="Porto - Responsive HTML5 Template">
+  <meta name="author" content="okler.net">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Web Fonts  -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!--[if IE]>
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!--[if lte IE 8]>
+  <script src="vendor/respond/respond.js"></script>
+  <script src="vendor/excanvas/excanvas.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+<div class="body">
+
+<%=yield%>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-ribbon">
+        <span>Get in Touch</span>
+      </div>
+      <div class="col-md-3">
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+
+          <div class="alert alert-success hidden" id="newsletterSuccess">
+            <strong>Success!</strong> You've been added to our email list.
+          </div>
+
+          <div class="alert alert-danger hidden" id="newsletterError"></div>
+
+          <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+            <div class="input-group">
+              <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="submit">Go!</button>
+										</span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-4">
+        <div class="contact-details">
+          <h4>Contact Us</h4>
+          <ul class="contact">
+            <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:support@mysqlcluster.org">support@mysqlcluster.org</a></p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <ul class="social-icons">
+            <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
+            <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
+            <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Linkedin">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <p>© Copyright 2014. All Rights Reserved.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

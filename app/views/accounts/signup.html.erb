@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="row featured-boxes login">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-6">
+        <div class="featured-box featured-box-secundary default info-content">
+          <div class="box-content">
+            <h4>Register An Account</h4>
+            <% if @account.errors.any? %>
+                <div id="error_explanation">
+                  <ul>
+                    <% @account.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+            <% end %>
+            <%= form_for(@account, url: accounts_signingup_path, method: :post) do |f| %>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <%= t('account.name')%>*
+                      <%= f.text_field :name, class:'form-control input-lg' %>
+                    </div>
+                    <div class="col-md-6">
+                      <%= t('account.company')%>*
+                      <%= f.text_field :company, class:'form-control input-lg' %>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <%= t('account.email')%>*
+                      <%= f.text_field :email, class:'form-control input-lg' %>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <%= t('account.password')%>*
+                      <%= f.password_field :password, class:'form-control input-lg' %>
+                    </div>
+                    <div class="col-md-6">
+                      <%= t('account.password_confirmation')%>*
+                      <%= f.password_field :password_confirmation, class:'form-control input-lg' %>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+
+                    <%= f.check_box :terms_of_service %>
+                    I Agree to the terms established here<br>
+                    <%= f.check_box :agreereceivenews %>
+                    I Agree to receive news from our services
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <input type="submit" value="Register" class="btn btn-primary pull-right push-bottom" data-loading-text="Loading...">
+                  </div>
+                </div>
+            <%end%>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+
+  </div>
+</div>
