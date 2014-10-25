@@ -10,9 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require modernizr/modernizr
 //= require jquery/jquery.js
-//= require nanoscroller/nanoscroller
 //= require porto-admin/theme.js
 
 
