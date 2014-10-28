@@ -23,3 +23,11 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+cluster:
+  adapter: mysql
+  timeout: 3600
+  database: mysql
+  user id: traderdata
+  password: q6dws460c
+

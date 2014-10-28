@@ -31,4 +31,8 @@ en:
     agreereceivenews: "Receive news and updates"
     signup_mail:
       subject: "Please verify your account"
+  database:
+    name: "Database Name"
+    delete:
+      confirmation: "Are you sure you want to destroy this database? This operation can´t be undone!"
 

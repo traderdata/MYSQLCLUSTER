@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1133715879">
+  <component name="DataSourceManagerImpl" format="xml" hash="4092276842">
     <data-source source="LOCAL" name="SQLite -" uuid="5e48e208-5378-42d7-a854-27fab7cbb426">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -24,6 +24,13 @@
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Backup\GITHUB\EASYDB\db\test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails MysqlCluster: cluster" uuid="8cb56f04-a788-4e57-a48d-ff2c49b2ef55">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/mysql</jdbc-url>
+      <user-password>dfdbdf9cdfcedfdddfd9df9edf9cdf9adfc9</user-password>
       <libraries />
     </data-source>
   </component>

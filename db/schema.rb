@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024132638) do
+ActiveRecord::Schema.define(version: 20141027181239) do
 
   create_table "accounts", force: true do |t|
     t.string   "email"
@@ -26,5 +26,20 @@ ActiveRecord::Schema.define(version: 20141024132638) do
   end
 
   add_index "accounts", ["email"], name: "index_accounts_on_email", unique: true
+
+  create_table "clusters", force: true do |t|
+    t.string   "name"
+    t.string   "datacenter"
+    t.string   "region"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "databases", force: true do |t|
+    t.string   "name"
+    t.string   "plan"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

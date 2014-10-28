@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'databases/new'
+
+  get 'databases/delete'
+
+  get 'databases/index'
+
   get 'accounts/signin'
 
   get 'accounts/signup_success'
@@ -10,6 +16,7 @@ Rails.application.routes.draw do
 
   match 'accounts/signingup', to: 'accounts#signingup', via: [:post]
   match 'accounts/signin', to: 'accounts#signingin', via: [:post]
+  post 'databases/save', to: 'databases#save', via: [:post]
 
   get 'home', to: 'static_pages#home'
 

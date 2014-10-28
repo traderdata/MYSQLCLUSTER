@@ -1,0 +1,73 @@
+
+<!-- start: page -->
+<div class="row">
+  <div class="col-md-12">
+
+    <%=form_for(@database, url: databases_save_path, method: :post) do |f|%>
+      <section class="panel">
+        <header class="panel-heading">
+          <h2 class="panel-title">Creating new Database</h2>
+          <p class="panel-subtitle">
+            Creates a new database within your account.
+          </p>
+        </header>
+        <div class="panel-body">
+          <div class="form-group">
+            <% if @database.errors.any? %>
+                <div class="alert alert-danger">
+                  <ul>
+                    <% @database.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+            <% end %>
+
+            <label class="col-sm-3 control-label"><%=f.label t('database.name')%><span class="required">*</span></label>
+            <div class="col-sm-9">
+              <%=f.text_field :name, class: 'form-control', placeholder: 'eg.: erp-so'%>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Database Plan<span class="required">*</span></label>
+            <div class="col-sm-9">
+              <div class="radio-custom radio-primary">
+                <input id="awesome" name="porto_is" type="radio" value="awesome" required checked />
+                <label for="awesome">Free - US$(0.00)</label>
+              </div>
+              <div class="radio-custom radio-primary">
+                <input id="very-awesome" name="porto_is" type="radio" value="very-awesome" />
+                <label for="very-awesome">Basic - US$(0.00)</label>
+              </div>
+              <div class="radio-custom radio-primary">
+                <input id="ultra-awesome" name="porto_is" type="radio" value="ultra-awesome" />
+                <label for="ultra-awesome">Professional  - US$(0.00)</label>
+              </div>
+              <div class="radio-custom radio-primary">
+                <input id="ultra-awesome" name="porto_is" type="radio" value="ultra-awesome" />
+                <label for="ultra-awesome">Advanced - US$(0.00)</label>
+              </div>
+              <label class="error" for="porto_is"></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Description</label>
+            <div class="col-sm-9">
+              <textarea name="skills" rows="5" class="form-control" ></textarea>
+            </div>
+          </div>
+        </div>
+        <footer class="panel-footer">
+          <div class="row">
+            <div class="col-sm-9 col-sm-offset-3">
+              <button class="btn btn-primary">Create</button>
+              <button type="reset" class="btn btn-default">Clear</button>
+            </div>
+          </div>
+        </footer>
+      </section>
+    <%end%>
+  </div>
+</div>
+<!-- end: page -->

@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-12">
+    <section class="panel">
+      <header class="panel-heading">
+        <div class="panel-actions">
+        </div>
+
+        <h2 class="panel-title">Databases</h2>
+      </header>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table mb-none">
+            <thead>
+            <tr>
+              <th width="60"></th>
+              <th width="100">#</th>
+              <th>Name</th>
+              <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @databases.each do |database| %>
+            <tr>
+              <td class="actions">
+                <a href=""><i class="fa fa-pencil"></i></a>
+                <%=link_to '', databases_delete_path, {class: 'fa fa-trash-o', confirm: t('database.delete.confirmation'), data: database.id}%>
+              </td>
+              <td><%=database.id%></td>
+              <td><%=database.name%></td>
+              <td>On</td>
+            </tr>
+            <%end%>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
